@@ -37,8 +37,8 @@ var updatePhelpsMemorial = function() {
     {code: 'PHL'},
     {address: 'Phelps Lab, Gainesville, FL 32611', latitude: '29.644564', longitude: '-82.348895'}, function(err,listing){
       if(err) throw err;
-        console.log('\nUpdated Phelps Memorial to Real UF Phelps Lab Address:\n');
-        console.log(listing);
+      console.log('\nUpdated Phelps Memorial to Real UF Phelps Lab Address:\n');
+      console.log(listing);
   });
 };
 var retrieveAllListings = function() {
