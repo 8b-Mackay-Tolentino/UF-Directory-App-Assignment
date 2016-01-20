@@ -35,7 +35,7 @@ var updatePhelpsMemorial = function() {
    */
   Listing.findOneAndUpdate(
     {code: 'PHL'},
-    {address: 'Phelps Lab, Gainesville, FL 32611', latitude: '29.644564', longitude: '-82.348895'}, function(err,listing){
+    {address: '100 Phelps Lab Museum Rd, Gainesville, FL 32611', coordinates:{ latitude: '29.644564', longitude: '-82.348895'}}, function(err,listing){
       if(err) throw err;
       console.log('\nUpdated Phelps Memorial to Real UF Phelps Lab Address:\n');
       console.log(listing);
